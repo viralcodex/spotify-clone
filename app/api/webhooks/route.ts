@@ -7,7 +7,6 @@ import {
 } from "@/libs/supabaseAdmin";
 import { headers } from "next/headers";
 import { NextResponse } from "next/server";
-import { createJSONStorage } from "zustand/middleware";
 
 const relevantEvents = new Set([
   "product.created",

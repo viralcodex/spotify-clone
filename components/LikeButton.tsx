@@ -77,7 +77,7 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         toast.error(error.message);
       } else {
         setIsLiked(true);
-        toast.success('Success');
+        toast.success('Song Liked');
       }
     }
 
@@ -90,10 +90,11 @@ const LikeButton: React.FC<LikeButtonProps> = ({
         cursor-pointer 
         hover:opacity-75 
         transition
+        text-neutral-400
       "
       onClick={handleLike}
     >
-      <Icon color={isLiked ? '#22c55e' : 'white'} size={25} />
+      <Icon color={isLiked ? '#22c55e' : ''} size={20} />
     </button>
   );
 }
